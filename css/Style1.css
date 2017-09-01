@@ -1,0 +1,301 @@
+@font-face {
+	font-family: "Cuprum";
+	src: url("./font/Cuprum.woff2");
+}
+@font-face {
+	font-family: "Cuprum bold";
+	src: url("./font/Cuprumbold.woff2");
+}
+@font-face {
+	font-family: "Cuprum italic";
+	src: url("./font/Cuprumitalic.woff2");
+}
+@font-face {
+	font-family: "Cuprum bold italic";
+	src: url("./font/Cuprumbolditalic.woff2");
+}
+	@font-face {
+		font-family: "PTSans";
+		src: url("./font/ptsans.woff2");
+	}
+	@font-face {
+		font-family: "PTSans bold";
+		src: url("./font/ptsansbold.woff2");
+	}
+
+html, body {
+	margin: 0;
+    padding: 0;
+	
+	font-family: "Cuprum", "PTsans", Arial, sans-serif;
+	font-size: 17px;
+	line-height: 17px;
+	font-weight: 400;
+	color: #ffffff;
+
+	background-color: #000000; 
+}
+a {
+	text-decoration: none;
+	color: #ffffff; 
+}
+ul {
+	list-style: none;
+}
+menu {
+	list-style: none;
+}
+header {
+	background-color: #f3f7f9;*
+}
+footer {
+	background-color: #3d546e;
+}
+
+.up-conteiner {
+	background-color: #32425c;
+}
+.my-navigation {
+	font-family: "Cuprum", "PTsans", Arial, sans-serif;
+	font-size: 17px;
+	line-height: 18px;
+	font-weight: 400;
+
+	color: #ffffff;
+}
+/* Почему это свойство не отображается и как вообще делать фон для текста ссылок и как менять его размер?--*/
+.order a {
+	background-color: #6db254;
+}
+.main-information {
+	font-family: "Cuprum italic", Arial, sans-serif;
+	font-size: 16px;
+	line-height: 23px;
+	font-weight: 400;
+	
+	color: #ff5257;
+}
+address {
+	font-style: normal;
+}
+span.phone {
+	font-size: 21px;
+	line-height: 18px;
+	font-weight: 400;
+	text-transform: uppercase;
+
+	color: #fb463c;
+}
+span.addгess-in-city {
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: 400;
+
+	color: #3d546e;
+}
+.sign-up a {
+	font-size: 21px;
+	line-height: 18px;
+	font-weight: 400;
+
+	color: #000000;
+	/*Опять вопрос про фон текста, он почему-то не срабатывает и я его задал в html документе через тег style*/
+}
+
+.main-menu {
+	background-color: #32425c;
+}
+.main-menu-header a {
+	font-family: "Cuprum", "PTsans", Arial, sans-serif;
+	font-size: 17px;
+	line-height: 17px;
+	font-weight: 400;
+
+	color: #ffffff;
+}
+
+.element-menu a {
+	font-family: "Cuprum bold", Arial, sans-serif;
+	font-size: 24px;
+	line-height: 30px;
+	font-weight: 700;
+
+	color: #ffffff;
+}
+
+.slider {
+	font-family: "Cuprum", Arial, sans-serif;
+	font-size: 14px;
+	line-height: 18px;
+	font-weight: 400;
+
+	color: #ffffff;
+	background-color:  /*Вот опять фон у текста не работает*/
+}
+.slider-h1 { /*Не работает это свойство, я запутался в каскадировании и наследовании, можете объяснить попроще?*/
+	font-family: "Cuprum bold", Arial, sans-serif;
+	font-size: 36px;
+	line-height: 30px;
+	font-weight: 700;
+
+	color: #ffffff;
+	background-color: #000000;/*Потом это уберу, сделал просто чтобы видно было текст*/
+}
+.slider-p {
+	font-family: "PTsans", Arial, sans-serif;
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 400;
+
+	color: #ffffff;
+	background-color: #000000;
+}
+.slider-catalog a {
+	font-family: "Cuprum", Arial, sans-serif;
+	font-size: 14px;
+	line-height: 18px;
+	font-weight: 400;
+
+	color: #ffffff;
+	background-color: #ff5357;
+}
+
+.elements-menu a {
+	font-family: "Cuprum bold", Arial, sans-serif;
+	font-size: 24px;
+	line-height: 30px;
+	font-weight: 700;
+}
+.conteiner .tagline-p {/*Этот пункт является интерактивным и реагирует на наведение мыши, но он разве должен быть ссылкой? это к вопросу о том, что можно ли ссылкой сделать весь контейнер?*/
+	font-family: "Cuprum", Arial, sans-serif;
+	font-size: 14px;
+	line-height: 18px;
+	font-weight: 400;
+/*Это свойство вообще по-моему не работает почему-то полностью*/
+	background-color: rgba(); /*Здесь как фон сделать? вставим свг или будем в css делать? если в css то нужно цвет указывать в rgba?*/
+}
+span.new {
+	font-family: "PTsans", Arial, sans-serif;
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: 400;
+
+	background-color: #ff5357;
+}
+
+.element-1 {
+	background-color: #ffbf47;
+}
+.element-2 {
+	background-color: #3bbce3;
+} 
+.element-3 {
+	background-color: #dc91d8;
+}
+.element-4 {
+	background-color: #8ed78f;
+}
+.element-5 {
+	background-color: #ffc047;
+}
+
+.background-caption-goods {
+	background-color: #f9f5f0;	
+}
+.tagline-h2 {
+	font-family: "Cuprum bold", Arial, sans-serif;
+	font-size: 30px;
+	line-height: 30px;
+	font-weight: 700;
+
+	color: #3d546e;
+}
+.background-caption-goods a{
+	font-family: "Cuprum", Arial, sans-serif;
+	font-size: 14px;
+	line-height: 18px;
+	font-weight: 400;
+	color: #ffffff;
+
+	background-color: #ff5357;
+}
+
+.name-goods {
+	font-family: "PTsans bold", Arial, sans-serif;
+	font-size: 18px;
+	line-height: 20px;
+	font-weight: 700;
+	text-align: center;
+
+	color: #000000;
+	background-color: #ffffff
+}
+.price-last {
+	font-family: "PTsans bold", Arial, sans-serif;
+	font-size: 17px;
+	line-height: 18px;
+	font-weight: 700;
+	text-align: center;
+	text-decoration: line-through;
+  	text-transform: uppercase;
+
+  	color: #a9a9a9
+}
+.price-realy {
+	font-family: "PTsans bold", Arial, sans-serif;
+	font-size: 17px;
+	line-height: 18px;
+	font-weight: 700;
+	text-align: center;
+  	text-transform: uppercase;
+
+  	color: #ffffff;
+  	background-color: #ee3643;
+}
+.Picture-goods {
+	background-color: #ffffff;
+}
+
+.background-color-makers {
+	background-color: #f9f5f0;
+}
+.background-color-makers a {
+	font-family: "Cuprum", Arial, sans-serif;
+	font-size: 14px;
+	line-height: 18px;
+	font-weight: 400;
+
+	color: #ffffff;
+	background-color: #ff5357;
+}
+.conteiner-makers {
+	background-color: #ffffff;
+}
+.makers-list a {
+	background-color: #ffffff;
+}
+.makers-list li { /*Нужно делать контейнер*/
+
+}
+
+.service-all {
+	background-color: #f4f8f9;
+}
+
+.without-effects {
+	font-family: "Cuprum bold", Arial, sans-serif;
+	font-size: 30px;
+	line-height: 24px;
+	font-weight: 700;
+
+	color: #000000;
+}
+.small-without-effects {
+	font-family: "PTsans", Arial, sans-serif;
+	font-size: 13px;
+	line-height: 24px;
+	font-weight: 400;
+
+	color: #000000;
+}
+

@@ -1,29 +1,39 @@
-<!DOCTYPE html>
+<!DOCTYPE html><!--Просто комментарий для проверки сохранения-->
 <html lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
+    <link rel="stylesheet" type="text/css" href="./css/normolize.css">
+    <link rel="stylesheet" type="text/css" href="./css/style1.css"><!--Вот подключил стили-->
   </head>
   <body>
   	<header class="main-header">
-  		<a><img src="" alt=""></a>
+  		<div class="up-conteiner">
+  			<a><img src="./img/logo/mainlogo.jpg" alt=""></a>	
+  			<form action="/echo" method="post">
+  				<input placeholder="Поиск:" type="search"><!--Нужно оформить как на макете, я не знаю как это сделать-->
+      		</form>
+  			<div class="my-navigation">
+  				<a href="">Закладки</a>
+  			</div>
+  			<div class="my-navigation">
+  				<a href="">Корзина: 0</a>
+  			</div>
+  			<div class="my-navigation order">
+  				<a href="">Оформить заказ</a>
+  			</div>
+  		</div>
   		<div class="main-information">Интернет-магазин строительных материалов и инструментов для ремонта</div>
-  		<form action="/echo" method="post">
-  			<input placeholder="Поиск:" type="search">
-      	</form>
-  		<div class="my-navigation1">
-  			<a href="">Закладки</a>
-  		</div>
-  		<div class="my-navigation2">
-  			<a href="">Корзина: 0</a>
-  		</div>
-  		<div class="my-navigation3">
-  			<a href="">Оформить заказ</a>
-  		</div>
-  		<address class="address1">
-  			<span class="phone">+7 (812) 555-05-55<br></span>
-  			<span class="addгess2">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
+  		<address class="address">
+  			<span class="phone"><img src="">+7 (812) 555-05-55<br></span>
+  			<span class="addгess-in-city">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
   		</address>
+  		<div class="Check-in">
+  			<ul class="sign-up">
+  				<li><a href=""><img src=""><span style="background-color: #ffffff"><!--Можно ли указывать эти свойства здесь-->Войти</span></a></li>
+  				<li><a href=""><span style="background-color: #ffffff">Регистрация</span></a></li>
+  			</ul>
+  		</div>
   		<nav class="main-menu">
   			<menu class="main-menu-header">
   				<li><a href="">Главная</a></li>
@@ -35,84 +45,90 @@
   				<li><a href="">Контакты</a></li>
   			</menu>
   		</nav>
-  		<div class="Check-in">
-  			<ul class="sign-up">
-  				<li><a href=""><img src="">Войти</a></li>
-  				<li><a href=""><img src="">Регистрация</a></li>
-  			</ul>
-  		</div>
   	</header>
   	<main class="conteiner">
   		<section class="site-navigation">
-  			<h2 class="clider-h2">ПЕРФОРАТОРЫ</h2>
-  			<p class="clider-p">Настойщие мужские игрушки</p>
-  			<a href="">ОТКРЫТЬ КАТАЛОГ</a>
-  		<!--Как делать стрелочки переключатели на слайдере? Это импуты или ссылки?-->
-  			<div class="slider"><img src="./img/slider.jpg" alt="Слайдер"></div>
+  			<div class="slider">
+  				<img src="./img/slider.jpg" alt="Слайдер">
+  				<a href="">
+  					<h1 class="slider-h1">ПЕРФОРАТОРЫ</h1>
+  					<p class="slider-p">Настойщие мужские игрушки</p>
+  				</a>
+  				<div class="slider-catalog"><a href="">ОТКРЫТЬ КАТАЛОГ</a></div>
+  			</div>
+  		<!--Как делать стрелочки переключатели на слайдере? Это импуты или ссылки? И вообще как оформить слайдер? Может быть объясните мне код непосредственно?-->
   		<!--Слайдер-->
-  			<div class="element-1">
+  			<div class="element-1"><!--Здесь кажется весь контейнер жёлтого цвета работает как ссылка, а интерактивный элемент у него всего один, можно ли как то всё это поместить в одну ссылку? и почему я не вижу свг картинок совсем, хотя мышкой наводится на это место как ссылка-->
   				<a href=""><img src="./img/icon-basket.svg" alt="Ведро"></a>
   				<h3 class="elements-menu"><a href="">Материалы</a></h3>
-  				<p class="tagline-element-1">На любой вкус</p>
-  				<span>new</span>
+  				<p class="tagline-p">На любой вкус</p>
+  				<span class="new">new</span>
   			</div>
   			<div class="element-2">
   				<a href=""><img src="./img/icon-drill.svg" alt="Дрель"></a>
   				<h3 class="elements-menu"><a href="">Инструмент</a></h3>
-  				<p class="tagline-element-1">На все случаи</p>
+  				<p class="tagline-p">На все случаи</p><!--Я не знаю как стилизовать эти элементы, у них что какая-то прозрачность стоит или это бэкграунд колор какой-то?-->
   			</div>
   			<div class="element-3">
   				<a href=""><img src="./img/icon-tractor.svg" alt="Трактор"></a>
   				<h3 class="elements-menu"><a href="">Техника</a></h3>
-  				<p class="tagline-element-1">Для стройки</p>
+  				<p class="tagline-p">Для стройки</p>
   			</div>
   			<div class="element-4">
   				<a href=""><img src="./img/icon-basket.svg" alt="Корзина"></a>
   				<h3 class="elements-menu"><a href="">Скидки 50%</a></h3>
-  				<p class="tagline-element-1">На 350 товаров</p>
+  				<p class="tagline-p">На 350 товаров</p>
   			</div>
   			<div class="element-5">
   				<a href=""><img src="./img/icon-delivery.svg" alt="Доставка"></a>
   				<h3 class="elements-menu"><a href="">Доставка</a></h3>
-  				<p class="tagline-element-1">Бесплатно</p>
+  				<p class="tagline-p">Бесплатно</p>
   			</div>
   		</section>
   		<section class="goods">
-  			<h2 class="tagline-h2">Популярные товары:</h2>
-  			<a href="">ВСЕ ПОПУЛЯРНЫЕ ТОВАРЫ</a>
-  			<article class="Picture-goods"><a href=""><img src="./img/drill-BFG-9000.jpg" alt="Дрель BFG 9000"></a>
-  				<h4 class="name-goods">
-  					<a href="">Перфоратор BOSCH BFG 9000</a>
-  				</h4>
-  				<p class="price price-last"><span>32500 Р.</span></p>
-  				<p class="price price-realy">25500 Р.</p>
+  			<div class="background-caption-goods">
+  				<h2 class="tagline-h2">ПОПУЛЯРНЫЕ ТОВАРЫ:</h2>
+  				<a href="">ВСЕ ПОПУЛЯРНЫЕ ТОВАРЫ</a>
+  			</div>
+  			<article class="Picture-goods">
+  				<a href="">	<!--Можно ли так весь артикл помещать в ссылку или сделать ссылки к каждой надписи, мне просто показалось, что всё окно с товаром должно работать как одна ссылка-->
+  					<img src="./img/drill-BFG-9000.jpg" alt="Перфоратор BFG 9000">
+  					<h4 class="name-goods">Перфоратор BOSCH BFG 9000</h4>
+  					<p class="price-last">32500 Р.</p>
+  					<p class="price-realy">25500 Р.</p>
+  				</a>
   			</article>
-  			<article class="Picture-goods"><a href=""><img src="./img/drill-BFG-3000.jpg" alt="Дрель BFG 3000"></a>
-  				<h4 class="name-goods">
-  					<a href="">Перфоратор BOSCH BFG 3000</a>
-  				</h4>
-  				<p class="price price-last"><span>22500 Р.</span></p>
-  				<p class="price price-realy">15500 Р.</p>
+  			<article class="Picture-goods">
+  				<a href="">
+  					<img src="./img/drill-BFG-3000.jpg" alt="Перфоратор BFG 3000">
+  					<h4 class="name-goods">Перфоратор BOSCH BFG 3000</h4>
+  					<p class="price-last">22500 Р.</p>
+  					<p class="price-realy">15500 Р.</p>
+  				</a>
   			</article>
-  			<article class="Picture-goods"><a href=""><img src="./img/drill-BFG-6000.jpg" alt="Дрель BFG 6000"></a>
-  				<h4 class="name-goods">
-  					<a href="">Перфоратор BOSCH BFG 6000</a>
-  				</h4>
-  				<p class="price price-last"><span>30500 Р.</span></p>
-  				<p class="price price-realy">25500 Р.</p>
+  			<article class="Picture-goods">
+  				<a href="">
+  					<img src="./img/drill-BFG-6000.jpg" alt="Перфоратор BFG 6000">
+  					<h4 class="name-goods">Перфоратор BOSCH BFG 6000</h4>
+  					<p class="price-last">30500 Р.</p>
+  					<p class="price-realy">25500 Р.</p>
+  				</a>
   			</article>
-			<article class="Picture-goods"><a href=""><img src="./img/drill-BFG-2000.jpg" alt="Дрель BFG 2000"></a>
-  				<h4 class="name-goods">
-  					<a href="">Перфоратор BOSCH BFG 2000</a>
-  				</h4>
+			<article class="Picture-goods">
+				<a href="">	
+					<img src="./img/drill-BFG-2000.jpg" alt="Перфоратор BFG 2000">
+  					<h4 class="name-goods">Перфоратор BOSCH BFG 2000</h4>
   				<!--Не получается отступ, как сделать здесь пустое место на котором типа должна быть зачёркнутая старая цена, делать вижуали хидден или просто потом шрифт текста сделать в цвет фона, чтобы он тупо спрятался и всё-->
-  				<p class="price price-realy">12500 Р.</p>
-  				<span class="new-goods1">new</span>
+  					<p class="price-realy">12500 Р.</p>
+  					<span class="new">new</span>
+  				</a>
   			</article>
   		</section>
   		<section class="makers">
-  			<h2 class="tagline-h2">ПОПУЛЯРНЫЕ ПРОИЗВОДИТЕЛИ:</h2>
-  			<a href="">ВСЕ ПРОИЗВОДИТЕЛИ</a>
+  			<div class="background-color-makers">
+  				<h2 class="tagline-h2">ПОПУЛЯРНЫЕ ПРОИЗВОДИТЕЛИ:</h2>
+  				<a href="">ВСЕ ПРОИЗВОДИТЕЛИ</a>
+  			</div>
   			<ul class="makers-list">
   				<li><a href=""><img src="./img/bosch.jpg" alt="BOSCH"></a>
   					<h6 class="visually-hidden">BOSCH</h6>
@@ -141,26 +157,26 @@
   			</ul>
   		</section>
   		<section class="service-all">
-  			<h2 class="Without-effects">СЕРВИСЫ</h2>
-  			<div class="small-div-text">Хороший интернет-магазин отличается от прохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными!</div>
+  			<h2 class="without-effects">СЕРВИСЫ</h2>
+  			<div class="small-without-effects">Хороший интернет-магазин отличается от прохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными!</div>
   			<ul class="service">
   				<li><a href="">Доставка</a></li>
   				<li><a href="">Гарантия</a></li>
   				<li><a href="">Кредит</a></li>
   			</ul>
   			<h2 class="tagline-h2">ДОСТАВКА</h2>
-  			<div class="small-div-text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж</div>
-  			<img src="./img/service1.svg" alt="Доставка">
+  				<div class="small-without-effects">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж</div>
+  				<div class="img-svg"><img src="./img/service1.svg" alt="Доставка"></div>
   			<h2 class="tagline-h2">ГАРАНТИЯ</h2>
-  			<div class="small-div-text">Если купленный у нас товар поломается или заискрит, в также в случае пожара, спровоцировавшего его возгорание, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.</div>
-  			<img src="./img/service2.svg" alt="Гарантия">
+  				<div class="small-without-effects">Если купленный у нас товар поломается или заискрит, в также в случае пожара, спровоцировавшего его возгорание, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.</div>
+  				<div class="img-svg"><img src="./img/service2.svg" alt="Гарантия"></div>
   			<h2 class="tagline-h2">КРЕДИТ</h2>
-  			<div class="small-div-text">Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</div>
-  				<img src="./img/service3.svg" alt="Кредит">
+  				<div class="small-without-effects">Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</div>
+  				<div class="img-svg"><img src="./img/service3.svg" alt="Кредит"></div>
   		</section>
   		<section class="about-company">
-  			<h2 class="Without-effects">КОМПАНИЯ <!--Кавычки вставлю потом-->"ТЕХНОМАРТ"</h2>
-  			<div class="small-div-text">Настоящий мужской шопинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить гастрарбайтерах. Мы можем доставить ваш товар в самые отдалённые точки России! Техномарт работает со многими транспортными компаниями:</div>
+  			<h2 class="without-effects">КОМПАНИЯ <!--Кавычки вставлю потом-->"ТЕХНОМАРТ"</h2>
+  			<div class="small-without-effects">Настоящий мужской шопинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить гастрарбайтерах. Мы можем доставить ваш товар в самые отдалённые точки России! Техномарт работает со многими транспортными компаниями:</div>
   			<ul class="transport-company">
   				<li>Деловые линии</li>
   				<li>Автотрейдин</li>
