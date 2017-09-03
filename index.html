@@ -6,12 +6,14 @@
     <link rel="stylesheet" type="text/css" href="./css/normolize.css">
     <link rel="stylesheet" type="text/css" href="./css/style1.css"><!--Вот подключил стили-->
   </head>
-  <body>
-  	<header class="main-header">
+  <body class="flex-main">
+  	<header class="main-header flex-main">
   		<div class="up-conteiner">
-  			<a><img src="./img/logo/mainlogo.jpg" alt=""></a>	
+  			<div class="logo">
+  				<a href=""><img src="" alt="">ТЕХНОМАРТ</a>
+  			</div>
   			<form action="/echo" method="post">
-  				<input placeholder="Поиск:" type="search"><!--Нужно оформить как на макете, я не знаю как это сделать-->
+  				<input class="search" placeholder="Поиск:" type="search"><!--Нужно оформить как на макете, я не знаю как это сделать-->
       		</form>
   			<div class="my-navigation">
   				<a href="">Закладки</a>
@@ -23,19 +25,20 @@
   				<a href="">Оформить заказ</a>
   			</div>
   		</div>
-  		<div class="main-information">Интернет-магазин строительных материалов и инструментов для ремонта</div>
-  		<address class="address">
+  		<div class="main-information">Интернет-магазин строительных материалов и инструментов для ремонта
+  			<address class="address">
   			<span class="phone"><img src="">+7 (812) 555-05-55<br></span>
   			<span class="addгess-in-city">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
-  		</address>
-  		<div class="Check-in">
-  			<ul class="sign-up">
-  				<li><a href=""><img src=""><span style="background-color: #ffffff"><!--Можно ли указывать эти свойства здесь-->Войти</span></a></li>
-  				<li><a href=""><span style="background-color: #ffffff">Регистрация</span></a></li>
-  			</ul>
+  			</address>
+  			<div class="Check-in">
+  				<ul class="sign-up">
+  					<li><a href=""><img src=""><span style="background-color: #ffffff"><!--Можно ли указывать эти свойства здесь-->Войти</span></a></li>
+  					<li><a href=""><span style="background-color: #ffffff">Регистрация</span></a></li>
+  				</ul>
+  			</div>
   		</div>
-  		<nav class="main-menu">
-  			<menu class="main-menu-header">
+  		<nav>
+  			<ul class="main-menu">
   				<li><a href="">Главная</a></li>
   				<li><a href="">Компания</a></li>
   				<li><a href="">Каталог</a></li>
@@ -43,10 +46,10 @@
   				<li><a href="">Спецпредложения</a></li>
   				<li><a href="">Доставка</a></li>
   				<li><a href="">Контакты</a></li>
-  			</menu>
+  			</ul>
   		</nav>
   	</header>
-  	<main class="conteiner">
+  	<main class="main-block flex-main">
   		<section class="site-navigation">
   			<div class="slider">
   				<img src="./img/slider.jpg" alt="Слайдер">
